@@ -1,0 +1,117 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Manuel d&#x27;installation · SOLUTIONS DIGITALES JDC</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="## 1 - Installation matériel"/><meta name="docsearch:version" content="next"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Manuel d&#x27;installation · SOLUTIONS DIGITALES JDC"/><meta property="og:type" content="website"/><meta property="og:url" content="https://SDJDC.github.io/SDJDC/"/><meta property="og:description" content="## 1 - Installation matériel"/><meta property="og:image" content="https://SDJDC.github.io/SDJDC/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://SDJDC.github.io/SDJDC/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/SDJDC/img/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/SDJDC/js/scrollSpy.js"></script><link rel="stylesheet" href="/SDJDC/css/main.css"/><script src="/SDJDC/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/SDJDC/en"><img class="logo" src="/SDJDC/img/favicon.ico" alt="SOLUTIONS DIGITALES JDC"/><h2 class="headerTitleWithLogo">SOLUTIONS DIGITALES JDC</h2></a><a href="/SDJDC/en/versions"><h3>next</h3></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/SDJDC/docs/en/next/man-utilisateur-pop" target="_self">Popina</a></li><li class=""><a href="/SDJDC/docs/en/next/man-utilisateur-qoodos" target="_self">Qoodos</a></li><li class=""><a href="/SDJDC/docs/en/next/man-utilisateur-fox" target="_self">Foxorders</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Installation</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Installation</h3><ul class=""><li class="navListItem navListItemActive"><a class="navItem" href="/SDJDC/docs/en/next/man-installation-pop">Manuel d&#x27;installation</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Manuels d&#x27;utilisation</h3><ul class=""><li class="navListItem"><a class="navItem" href="/SDJDC/docs/en/next/man-utilisateur-pop">Manuel d&#x27;utilisation client</a></li><li class="navListItem"><a class="navItem" href="/SDJDC/docs/en/next/man-utilisateur-pop-ipod">Manuel d&#x27;utilsation Popina sur iPod</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Manuel d&#x27;installation</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="1---installation-matériel"></a><a href="#1---installation-matériel" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1 - Installation matériel</h2>
+<p>A noter que les imprimantes peuvent être relié soit en Bluetooth soit par un câble réseau, toutefois une imprimante relié en Bluetooth ne peut être relié qu'à une seule caisse au contraire d'une imprimante connectée en réseau qui peut être contactée par différentes caisses du réseau.</p>
+<h3><a class="anchor" aria-hidden="true" id="cas-1--installation-simple"></a><a href="#cas-1--installation-simple" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Cas 1 : Installation simple</h3>
+<p>Matériel : 1 iPad, 1 imprimante, 1 routeur, 1 tiroir caisse</p>
+<ol>
+<li>Branchez le câble ethernet (RJ45) entre l'imprimante (port 4 sur l'image ci dessous) et un des ports jaune situé au dos de votre routeur (ce câble peut être remplacé par deux boitiers CPL).</li>
+</ol>
+<table>
+<thead>
+<tr><th><img src="https://imgur.com/XDEDcYI.png" alt=""></th><th><img src="https://imgur.com/O0zHLpc.png" alt=""></th><th><img src="https://imgur.com/FUob9jm.png" alt=""></th></tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<ol start="2">
+<li>Branchez le tiroir-caisse au port DK (Port 6 sur l'image au dessus) sous l'imprimante (via le câble du tiroir-caisse).</li>
+<li>Branchez le câble Ethernet fourni avec Popina entre le port Ethernet bleu situé au dos du routeur et un des ports Ethernet situé au dos de votre box internet. Selon votre fournisseur d'accès internet l'étiquetage des parts ethernet peut être différent. Les plus communs sont des port <strong>jaunes</strong> et/ou étiquetés <strong>LAN</strong>.</li>
+</ol>
+<p>Un fois tout branchez vous pouvez démarrer votre iPad et vous connecter au réseau Wi-Fi nommé Popina ou Popina_5G. Le mot de passe se trouve sur l'étiquette de votre routeur.</p>
+<p><strong>NB :</strong> Dans le cas où vous n'avez pas de routeur, branchez directement l'imprimante à un port ethernet de votre box.</p>
+<h3><a class="anchor" aria-hidden="true" id="cas-2--installation-2-ipads-2-imprimantes"></a><a href="#cas-2--installation-2-ipads-2-imprimantes" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Cas 2 : Installation 2 iPads 2 imprimantes</h3>
+<p>Matériel : 2 iPads, 2 imprimantes, 1 routeur POE (Edge routeur de Unifi), 1 borne Unifi</p>
+<ol>
+<li>Branchez le câble ethernet (RJ45) entre l'imprimante (port 4 sur l'image ci dessous) et le port étiqueté IMP. sur votre routeur (Généralement le port <strong>eth1</strong>).</li>
+</ol>
+<table>
+<thead>
+<tr><th><img src="https://imgur.com/XDEDcYI.png" alt=""></th><th><img src="https://imgur.com/lrxUaKA.jpg" alt=""></th></tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<ol start="2">
+<li>Branchez le tiroir-caisse au port DK (Port 6 sur l'image au dessus) sous l'imprimante (via le câble du tiroir-caisse).</li>
+<li>Branchez le câble Ethernet fourni avec Popina entre le port Ethernet <strong>eth0</strong> (étiqueté <strong>Internet</strong>) et un des ports Ethernet situé au dos de votre box internet. Selon votre fournisseur d'accès internet l'étiquetage des parts ethernet peut être différent. Les plus communs sont des port <strong>jaunes</strong> et/ou étiquetés <strong>LAN</strong>.</li>
+<li>Branchez le câble Ethernet fourni avec Popina entre la borne <strong>Unifi</strong> et le port <strong>eth4/PoE out</strong> du routeur.</li>
+<li>Une fois votre antenne connectée nous vous invitons à contacter votre service technique par chat dans l'onglet support de l'application Popina ou par téléphone, afin d'appairer votre antenne à votre nouveau routeur.</li>
+</ol>
+<h2><a class="anchor" aria-hidden="true" id="2---mise-en-place-de-lapp-popina"></a><a href="#2---mise-en-place-de-lapp-popina" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2 - Mise en place de l'App Popina</h2>
+<h3><a class="anchor" aria-hidden="true" id="téléchargez-popina"></a><a href="#téléchargez-popina" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><strong>Téléchargez Popina</strong></h3>
+<p>Rendez-vous dans l'<strong>App Store</strong>, recherchez <strong>&quot;Popina&quot;</strong>, pour télécharger votre nouvelle caisse Popina, appuyez sur <strong>&quot;Obtenir&quot;</strong> ou sur le <strong>&quot;Nuage&quot;</strong> si vous avez déjà téléchargé une fois l'application.
+Vous la retrouverez ensuite sur la page d'accueil de votre iPad.</p>
+<h3><a class="anchor" aria-hidden="true" id="connectez-vous-au-réseau-popina"></a><a href="#connectez-vous-au-réseau-popina" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><strong>Connectez-vous au réseau Popina</strong></h3>
+<p>Si vous avez reçu un routeur <strong>Popina</strong> connectez-vous au réseau <strong>Popina</strong> avec le mot de passe indiqué derrière le routeur (WPS PIN). Sinon restez connecté au réseau wifi de votre box internet.</p>
+<p>En allant dans <strong>Réglages</strong> -&gt; <strong>Compte Popina</strong> -&gt; <strong>SSID</strong>, en appuyant sur <strong>Configurer</strong> à droite de SSID, un pop-up apparaît permettant de renseigner le nom et le mot de passe du réseau Wi-Fi sur lequel doit passer l'iPad lors du lancement de l'application <strong>Popina</strong>. Cela permet d'être toujours connecté au bon réseau Wi-Fi sans que cela nécessite de manipulation supplémentaire.</p>
+<h3><a class="anchor" aria-hidden="true" id="lancez-popina"></a><a href="#lancez-popina" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><strong>Lancez Popina</strong></h3>
+<p>Connectez-vous ou inscrivez-vous si cela n'est pas déjà fait.
+Une fois dans Popina, touchez la barre noire à gauche de l'écran et allez dans <strong>Réglages / Impression</strong>.
+Vérifiez que votre (vos) imprimante(s) sont bien présentes dans cet écran et qu'elles sont <strong>&quot;reconnues&quot;</strong>, pour cela elles doivent apparaître en <strong>&quot;vert&quot;</strong>. Si ce n'est pas le cas, appuyez sur <strong>&quot;Test&quot;</strong> pour voir si un ticket sort bien du (des) imprimante(s).
+Si ce n'est pas le cas, vérifiez que votre imprimante a bien du papier, est bien allumée et branchée au routeur, éteignez et rallumer le routeur et l'imprimante.</p>
+<h3><a class="anchor" aria-hidden="true" id="si-ipad-secondaire-ou-iphone--ipod"></a><a href="#si-ipad-secondaire-ou-iphone--ipod" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><strong>Si iPad secondaire ou iPhone / iPod</strong></h3>
+<p>Sur les appareils secondaires, connectez-vous avec votre compte <strong>Popina</strong>.
+Accédez à Réglages &gt; Flotte puis clique sur se connecter au niveau de la carte contenant le nom de votre iPad principale.</p>
+<p><em>Popina est maintenant prêt !</em></p>
+<h3><a class="anchor" aria-hidden="true" id="configurez"></a><a href="#configurez" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><strong>Configurez</strong></h3>
+<p>En appuyant sur la barre noire à gauche de l'écran, vous pouvez configurer <strong>Popina</strong> en allant sur :
+Produits pour éditer votre carte.
+Salles pour créer, activer et gérer vos différentes salles.
+Réglages pour paramétrer vos moyens de paiement, employés, ticket de caisse...</p>
+<p>Pour plus d'informations par rapport à la configuration veuillez vous référez à la <strong>documentation utilisateur</strong> disponible depuis votre caisse dans Support et documentation puis utilisateur.</p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-next button" href="/SDJDC/docs/en/next/man-utilisateur-pop"><span>Manuel d&#x27;utilisation client</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#1---installation-matériel">1 - Installation matériel</a><ul class="toc-headings"><li><a href="#cas-1--installation-simple">Cas 1 : Installation simple</a></li><li><a href="#cas-2--installation-2-ipads-2-imprimantes">Cas 2 : Installation 2 iPads 2 imprimantes</a></li></ul></li><li><a href="#2---mise-en-place-de-lapp-popina">2 - Mise en place de l'App Popina</a><ul class="toc-headings"><li><a href="#téléchargez-popina"><strong>Téléchargez Popina</strong></a></li><li><a href="#connectez-vous-au-réseau-popina"><strong>Connectez-vous au réseau Popina</strong></a></li><li><a href="#lancez-popina"><strong>Lancez Popina</strong></a></li><li><a href="#si-ipad-secondaire-ou-iphone--ipod"><strong>Si iPad secondaire ou iPhone / iPod</strong></a></li><li><a href="#configurez"><strong>Configurez</strong></a></li></ul></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/SDJDC/" class="nav-home"><img src="/SDJDC/img/favicon.ico" alt="SOLUTIONS DIGITALES JDC" width="66" height="58"/></a><div><h5>Docs</h5><a href="/SDJDC/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/SDJDC/docs/en/doc2.html">Guides (or other categories)</a><a href="/SDJDC/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/SDJDC/en/users.html">User Showcase</a><a href="https://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/SDJDC/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://opensource.facebook.com/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/SDJDC/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2020 JDC</section></footer></div></body></html>

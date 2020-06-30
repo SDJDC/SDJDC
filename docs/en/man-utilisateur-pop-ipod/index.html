@@ -1,0 +1,248 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Manuel d&#x27;utilsation Popina sur iPod/iPhone · SOLUTIONS DIGITALES JDC</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="_____"/><meta name="docsearch:version" content="10.4.1"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Manuel d&#x27;utilsation Popina sur iPod/iPhone · SOLUTIONS DIGITALES JDC"/><meta property="og:type" content="website"/><meta property="og:url" content="https://SDJDC.github.io/SDJDC/"/><meta property="og:description" content="_____"/><meta property="og:image" content="https://SDJDC.github.io/SDJDC/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://SDJDC.github.io/SDJDC/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/SDJDC/img/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/SDJDC/js/scrollSpy.js"></script><link rel="stylesheet" href="/SDJDC/css/main.css"/><script src="/SDJDC/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/SDJDC/en"><img class="logo" src="/SDJDC/img/favicon.ico" alt="SOLUTIONS DIGITALES JDC"/><h2 class="headerTitleWithLogo">SOLUTIONS DIGITALES JDC</h2></a><a href="/SDJDC/en/versions"><h3>10.4.1</h3></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/SDJDC/docs/en/man-utilisateur-pop" target="_self">Popina</a></li><li class=""><a href="/SDJDC/docs/en/man-utilisateur-qoodos" target="_self">Qoodos</a></li><li class=""><a href="/SDJDC/docs/en/man-utilisateur-fox" target="_self">Foxorders</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Manuels d&#x27;utilisation</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Installation</h3><ul class=""><li class="navListItem"><a class="navItem" href="/SDJDC/docs/en/man-installation-pop">Manuel d&#x27;installation</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Manuels d&#x27;utilisation</h3><ul class=""><li class="navListItem"><a class="navItem" href="/SDJDC/docs/en/man-utilisateur-pop">Manuel d&#x27;utilisation client</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/SDJDC/docs/en/man-utilisateur-pop-ipod">Manuel d&#x27;utilsation Popina sur iPod</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Manuel d&#x27;utilsation Popina sur iPod/iPhone</h1></header><article><div><span><hr>
+<blockquote>
+<p>⚠️ Cette documentation couvre les fonctionnalités et méthodes d’utilisation de la version télécommande de l'application quand installé sur iPhone ou iPod Touch. ⚠️</p>
+</blockquote>
+<hr>
+<h1><a class="anchor" aria-hidden="true" id="1---mise-en-place-et-connexion"></a><a href="#1---mise-en-place-et-connexion" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1 - Mise en place et connexion</h1>
+<p>Si vous lisez cette documentation, c’est que vous avez déjà téléchargé l’application sur l’<strong>App Store</strong>.</p>
+<p>Afin de pouvoir de connecter votre appareil en tant que télécommande à votre caisse centrale veuillez vous connecter à l’aide de vos identifiants <strong>Popina</strong>.</p>
+<h2><a class="anchor" aria-hidden="true" id="11---connexion-à-la-caisse-centrale"></a><a href="#11---connexion-à-la-caisse-centrale" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1.1 - Connexion à la caisse centrale</h2>
+<p>Pour connecter votre nouvelle télécommande, veuillez d’abord vérifier que votre périphérique soit bien connecté sur le même Wi-Fi que la caisse principale.</p>
+<p>Pour cela, rendez vous sur votre page d'accueil de l’iPhone ou iPod, sélectionner <strong>réglages ⚙️</strong> &gt; Wi-Fi sur vos deux équipements et vérifiez qu’ils sont connecté sur le même wifi.</p>
+<p>Une fois sur le même réseau, retournez sur l’application <strong>Popina</strong> sur vos deux équipements.</p>
+<p>Sur votre iPhone/iPod, sélectionnez le menu hamburger (représenté par trois lignes horizontales) en haut à gauche, puis sélectionnez l’onglet <strong>Paramètres</strong>.</p>
+<p>Dans paramètres vous retrouverez l’onglet  <strong>Flotte</strong>. Celui-ci vous permet de choisir à quel iPad centrale vous souhaitez vous connecter.</p>
+<p>Appuyez sur se connecter sur le nom de l’iPad que vous souhaitez, puis valider le message de vérification.</p>
+<p>Votre iPod/iPhone est maintenant connecté en tant que télécommande. Reconnectez vous à l’aide de votre code à 4 chiffres.</p>
+<p align="center">
+  <img src="https://imgur.com/fdtGkyA.gif" width=250px>
+</p>
+<h2><a class="anchor" aria-hidden="true" id="12---paramétrage-de-la-télécommande"></a><a href="#12---paramétrage-de-la-télécommande" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1.2 - Paramétrage de la télécommande</h2>
+<p>Sur chaque périphérique qui est connecté en tant que télécommande, il est nécessaire de renseigner certains paramètres supplémentaires.</p>
+<h3><a class="anchor" aria-hidden="true" id="121---imprimantes"></a><a href="#121---imprimantes" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1.2.1 - Imprimantes</h3>
+<p>Chaque télécommande a son propre paramétrage d’imprimantes. Ceci vous permet de paramétrer chaque télécommande de manière différente selon leur utilisation.</p>
+<p>Pour se faire</p>
+<ul>
+<li>ouvrez le menu à l’aide du bouton en haut à gauche.</li>
+<li>Sélectionnez <strong>Impression</strong></li>
+</ul>
+<table>
+<thead>
+<tr><th>Avec imprimante ticket de caisse</th><th>Sans imprimante ticket de caisse</th></tr>
+</thead>
+<tbody>
+<tr><td>Cochez <strong>Ticket de caisse</strong> sur l’imprimante de votre choix. Toutes notes et factures sortiront ainsi la dessus</td><td>Si aucune imprimante à ticket de caisse n’est sélectionné, au moment de demander une note/facture, il vous sera alors proposé une liste de toutes les imprimantes afin de pourvoir choisir celle qui vous arrange.</td></tr>
+</tbody>
+</table>
+<ul>
+<li>Places vos lieux de préparations en appuyant sur le rond vide sur la carte de l’imprimante concernée. Choisissez le lieu souhaité.</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="122---blocage-des-tables"></a><a href="#122---blocage-des-tables" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1.2.2 - Blocage des tables</h3>
+<p align="center">
+    <blockquote>
+        <p align="center">⚠️⚠️⚠️<br>
+                Avant d’activer cette option merci de voir avec notre équipe support afin                                   de voir si votre utilisation le nécessite. 
+</blockquote>
+    </p>
+<p>Le blocage des tables si activé bloque une table dès qu’elle est ouverte par un équipement. Ceci évite qu’une autre personne se connecte sur votre table en même temps que vous.</p>
+<p>Si activé il doit l'être sur chaque caisse, y compris la caisse centrale.</p>
+<p>Pour l'activer rendez vous dans les réglages de l’iPad. Dans la colonne de gauche descendez jusqu’à retrouver l’application <strong>Popina</strong>. Une fois sélectionnée vous pouvez cocher <strong>&quot;Verrouillage des tables activées&quot;</strong>.</p>
+<h1><a class="anchor" aria-hidden="true" id="2---présentation-de-linterface-dutilisation"></a><a href="#2---présentation-de-linterface-dutilisation" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2 - Présentation de l'interface d'utilisation</h1>
+<h2><a class="anchor" aria-hidden="true" id="21---connexion-vendeur"></a><a href="#21---connexion-vendeur" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2.1 - Connexion vendeur</h2>
+<p>Le premier écran que vous rencontrerez lorsque vous ouvrez l'application est l'écran de connexion vendeur. Ici vous pouvez saisir votre code à 4 chiffres afin de vous connecter.</p>
+<p>Dans le cas où vous n'avez qu'un seul utilisateur dans votre programmation vous passez automatiquement cet écran.</p>
+<h2><a class="anchor" aria-hidden="true" id="22---menu"></a><a href="#22---menu" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2.2 - Menu</h2>
+<p>En haut à gauche de chaque écran de l'application vous pouvez retrouver la touche menu hamburger représenté par une touche avec trois lignes horizontales.</p>
+<h3><a class="anchor" aria-hidden="true" id="221---commandes"></a><a href="#221---commandes" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2.2.1 - Commandes</h3>
+<p>Lien vers votre écran de commandes. Celui-ci ouvrira votre salle par défaut.</p>
+<h3><a class="anchor" aria-hidden="true" id="222---rapport-caisse"></a><a href="#222---rapport-caisse" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2.2.2 - Rapport caisse</h3>
+<p>L'écran rapport caisse permet de consulter quelques informations sur le chiffre de la journée en cours.
+Infos retrouvées sur la page rapport caisse :</p>
+<ul>
+<li>Heure d'ouverture de la caisse</li>
+<li>Nombre de couverts</li>
+<li>Chiffre d'affaires</li>
+<li>Restant à payer</li>
+<li>Annulations</li>
+<li>Remises</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="223---réglages"></a><a href="#223---réglages" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2.2.3 - Réglages</h3>
+<p>L'accès à plusieurs des onglets est bloqué et accessible pour modification seulement à partir de la caisse centrale.</p>
+<p>Voici les réglages disponible sur votre télécommande :</p>
+<h4><a class="anchor" aria-hidden="true" id="--employés"></a><a href="#--employés" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><strong>- Employés</strong></h4>
+<p>Dans les réglages des employés, vous avez la possibilité d'activer la connexion automatique.</p>
+<h4><a class="anchor" aria-hidden="true" id="--impression"></a><a href="#--impression" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><strong>- Impression</strong></h4>
+<p>Les imprimantes sur <strong>Popina</strong> n’ont que quelques paramètres afin de rester le plus simple à paramétrer que possible.</p>
+<p>Afin de plus facilement s’y retrouver parmi vos différentes imprimantes vous avez la possibilité de les renommer. Pour se faire, sélectionnez le nom en vert qui se situe en haut a gauche de la carte de l'imprimante. A ce moment vous serez présenté avec le clavier <strong>Apple</strong> afin de le renommer.</p>
+<p>Ensuite vous trouverez l’option <strong>Ticket de caisse.</strong> Cette option défini si l’imprimante en question sera utilisée pour l’impression du ticket, votre clôture, des avoir clients et d’autres documents de type générique.</p>
+<p>Vous retrouverez des options supplémentaires en dessous du nom de l'imprimante.</p>
+<p><strong>Imprimante de secours :</strong> Déclarer une imprimante en tant qu’imprimante de secours veut dire que si une imprimante (ex : cuisine) n’est pas joignable par la caisse, les bons de préparation s’imprimeront sur l’imprimante déclaré en secours. Il est conseillé de déclarer votre imprimante facture en tant que imprimante de secours.</p>
+<p><strong>Afficheur client</strong> : Si vous avez un afficheur client branché sur votre imprimante, vous devez également l’activer sur votre imprimante pour que celui-ci soit fonctionnel.</p>
+<p><strong>Inverser le sens de l’impression</strong> : Selon l’orientation de votre imprimante il peut être pratique de retourner le sens de l’impression du ticket. Avec cette option d’activé le ticket s’imprimera en commençant par le bas.</p>
+<h4><a class="anchor" aria-hidden="true" id="--flotte"></a><a href="#--flotte" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><strong>- Flotte</strong></h4>
+<p>Gestion des connexions avec la caisse centrale.</p>
+<h4><a class="anchor" aria-hidden="true" id="--réglages-divers"></a><a href="#--réglages-divers" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><strong>- Réglages divers</strong></h4>
+<ul>
+<li><strong>Désactiver la mise en veille de l'appareil</strong> : En activant cette option, l'appareil restera allumé tant que <strong>Popina</strong> sera actif.</li>
+<li><strong>Déconnexion automatique de l'utilisateur</strong> : Nombre de secondes avant l'appareil déconnecte l'utilisateur (X secondes). Quand on active l'option une fenêtre s'ouvre qui demande d'entrer le nombre de seconde (X) qui va s'écouler avant la déconnexion du vendeur.</li>
+<li><strong>Salle sélectionnée par défaut</strong> : Choisissez la salle qui va s'ouvrir par défaut quand on ira dans <strong>Commandes</strong>.</li>
+<li><strong>Catégorie, menu ou sélection sélectionnée par défaut</strong> : Choisissez la catégorie, le menu ou la sélection sélectionnée par défaut s'affichera automatiquement lors de l'ouverture d'une vente.</li>
+<li><strong>Émettre un son lors de l'appui sur une touche</strong> : Si actif, un son (click) sera joué juste après un appui sur une touche.</li>
+<li><strong>Cacher des catégories, menus ou sélections sur cet appareil</strong> : Les catégories, menus ou sélections cachées ne seront pas accessibles en mode commandes sur cet télécommande.</li>
+</ul>
+<h4><a class="anchor" aria-hidden="true" id="--compte-popina"></a><a href="#--compte-popina" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><strong>- Compte Popina</strong></h4>
+<table>
+<thead>
+<tr><th style="text-align:center">Compte</th><th style="text-align:center">Information</th></tr>
+</thead>
+<tbody>
+<tr><td style="text-align:center">Compte</td><td style="text-align:center">Adresse mail</td></tr>
+<tr><td style="text-align:center">Formule</td><td style="text-align:center">Type de formule Popina</td></tr>
+</tbody>
+</table>
+<hr>
+<table>
+<thead>
+<tr><th style="text-align:center">Application</th><th style="text-align:center">Information</th></tr>
+</thead>
+<tbody>
+<tr><td style="text-align:center">Version</td><td style="text-align:center">Version et Build</td></tr>
+<tr><td style="text-align:center">IP</td><td style="text-align:center">Adresse IP</td></tr>
+<tr><td style="text-align:center">SSID</td><td style="text-align:center">Wi-Fi connecté</td></tr>
+<tr><td style="text-align:center">Dernière sauvegarde</td><td style="text-align:center">Date et heure</td></tr>
+<tr><td style="text-align:center">Dernière édition de la carte</td><td style="text-align:center">Date et heure</td></tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Currency</strong> : Permet de choisir la devise utiliser par l'application <strong>Popina</strong>.</li>
+<li><strong>Déconnexion</strong> : En appuyant sur le bouton <strong>Déconnecter</strong> on peut se déconnecter du compte <strong>Popina</strong>.</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="224---support"></a><a href="#224---support" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2.2.4 - Support</h3>
+<p>Accès au documentations ainsi qu'aux coordonnées de l'équipe support de <strong>Popina</strong>.</p>
+<h3><a class="anchor" aria-hidden="true" id="225---déconnexion"></a><a href="#225---déconnexion" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2.2.5 - Déconnexion</h3>
+<p>Pour se déconnecter du vendeur actuellement sélectionné, il faut ouvrir la barre de navigation et appuyer sur le nom du vendeur qui apparaît en bas à gauche de l'écran.</p>
+<h1><a class="anchor" aria-hidden="true" id="3---vente-sur-télécommande"></a><a href="#3---vente-sur-télécommande" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3 - Vente sur télécommande</h1>
+<p>Il est à noter qu’il est impossible de démarrer une nouvelle caisse à partir d’une télécommande.</p>
+<h2><a class="anchor" aria-hidden="true" id="31---prises-de-commandes"></a><a href="#31---prises-de-commandes" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3.1 - Prises de commandes</h2>
+<p>La prise de commandes sur télécommande est essentiellement pareil que sur la caisse centrale. Il y a tout de même quelques différences et ce chapitre va se concentrer là dessus.</p>
+<h3><a class="anchor" aria-hidden="true" id="311---ouverture-dune-commande"></a><a href="#311---ouverture-dune-commande" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3.1.1 - Ouverture d’une commande</h3>
+<p>Vu que sur la télécommande nous travaillons avec un écran plus petit, vous pouvez remarquez que vous ne retrouvez pas votre plan de salle habituel. Celui-ci se présente alors sous forme de liste sur une salle et d’une liste de commandes ouvertes sur le comptoir.</p>
+<table>
+<thead>
+<tr><th style="text-align:center">Sur plan de salle</th><th style="text-align:center">Sur comptoir</th></tr>
+</thead>
+<tbody>
+<tr><td style="text-align:center"><img src="https://imgur.com/uPQPO9a.png" alt="image salle"></td><td style="text-align:center"><img src="https://imgur.com/Mm36voF.png" alt="image comptoir"></td></tr>
+</tbody>
+</table>
+<p>A l'ouverture d'une table sur une salle, par défaut vous sera demandé le nombre de couverts. Si vous souhaitez le désactiver ou l'activer sur le comptoir, ce paramétrage doit être effectué sur la caisse centrale dans l'onglet <strong>Salles</strong>.</p>
+<h3><a class="anchor" aria-hidden="true" id="312---saisie-dune-commande"></a><a href="#312---saisie-dune-commande" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3.1.2 - Saisie d'une commande</h3>
+<p>Une fois sur votre écran de commande vous trouvez un écran avec la présentation ci-dessous :</p>
+<p align="center">
+  <img src="https://imgur.com/BBKcGyV.gif" width=250px>
+</p>
+<p>La saisie d'articles s'effectue à l'aide de ces trois sections :</p>
+<p><center><strong>Groupes d'articles</center></strong></p>
+<p align="center">
+  <img src="https://imgur.com/Vcy6fWn.png" width=250px>
+</p>
+<p><center> La quantité d'articles saisie dans un groupe s'affiche sur celui-ci</center></p>
+<p><center><strong>Familles du groupe</center></strong></p>
+<p align="center">
+  <img src="https://imgur.com/rnWorcQ.png" width=250px>
+</p>
+<p><center><strong>Articles contenu dans la famille</center></strong></p>
+<p align="center">
+  <img src="https://imgur.com/pKxvJUb.png" width=250px>
+</p>
+<p>Dans le cas où les <strong>à suivre</strong> manuelles sont activé, en bas de l'écran vous trouverez la touche <strong>+ Suite</strong>.</p>
+<p align="center">
+  <img src="https://imgur.com/Ufn1afQ.png" width=250px>
+</p>
+<p>Lors d'une saisie de commande avec les <strong>à suivre</strong> manuelles, on peut modifier le niveau de suite d'un article en le faisant clisser en dessous du niveau de suite souhaité.</p>
+<p>Lors de la saisie d'un article on peut à la place de faire un appuie simple dessus, rester appuyer plus longuement. Ce qui va ouvrir une nouvelle fenêtre permettant de rentrer le nombre d'articles voulus, mettre un commentaire, changer la liste de prix.
+On a aussi deux options :
+<strong>Dupliquer</strong> qui permet deux choses. La première vendre deux fois la sélection l'appuie a été fait sur un article qui n'a pas encore été tapé. Sinon si l'article a déjà été tapé cela permet de la doubler simplement.
+<strong>Annulation</strong> qui va permettre d'annuler la sélection.</p>
+<h3><a class="anchor" aria-hidden="true" id="313---envoi-en-commande"></a><a href="#313---envoi-en-commande" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3.1.3 - Envoi en commande</h3>
+<p>Lorsque toute la commande est tapée, il faut appuyer sur le montant de la table et appuyer sur <strong>&quot;➡️ Envoi&quot;</strong> à gauche de <strong>&quot;✔️ règlements&quot;</strong>.</p>
+<h2><a class="anchor" aria-hidden="true" id="32---consultation-de-commande-en-cours"></a><a href="#32---consultation-de-commande-en-cours" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3.2 - Consultation de commande en cours</h2>
+<p>La consultation d'une commande en cours se résume à simplement ouvrir la table et en haut de l'écran sélectionner le prix total afin de voir les articles saisie.</p>
+<p align="center">
+  <img src="https://imgur.com/bye5jzz.gif" width=250px>
+</p>
+<h3><a class="anchor" aria-hidden="true" id="321---détail-lors-dune-consultation"></a><a href="#321---détail-lors-dune-consultation" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3.2.1 - Détail lors d'une consultation</h3>
+<p>Pour avoir des détails lors d'une consultation de table, il faut appuyer sur l'icône des <strong>'. . .'</strong> cela ouvre une nouvelle fenêtre permettant de voir les informations suivantes :</p>
+<p><strong>Servi par XXX</strong> : XXX étant le nom du vendeur.
+<strong>Heure d'ouverture</strong> : Heure d'ouverture de la vente.
+<strong>XXX couvert(s)</strong> : XXX étant le nombre de couvert.
+<strong>Commentaires</strong> : Cela ouvre une petite fenêtre permettant de mettre un commentaire sur la vente.
+<strong>Annulation de la commande</strong> : Permet d'annuler la commande.</p>
+<h3><a class="anchor" aria-hidden="true" id="322---recherche-dune-vente"></a><a href="#322---recherche-dune-vente" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3.2.2 - Recherche d'une vente</h3>
+<p>Indifféremment du mode de la salle sélectionnée on peut appuyer sur la touche de <strong>recherche 🔎</strong>. On arrive sur un liste qui va regrouper les ventes en cours / clôturées / annulées de la journée en cours. On peut par ailleurs en appuyant sur le <strong>&quot;+&quot;</strong> choisir un ou plusieurs filtre de recherche. Il faudra appuyer sur un filtre pour le sélectionner et faire <strong>OK</strong> pour valider. On revient alors alors sur la liste des ventes de la journée qui correspondent au filtre appliqué.</p>
+<h2><a class="anchor" aria-hidden="true" id="33---encaisser-une-vente"></a><a href="#33---encaisser-une-vente" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3.3 - Encaisser une vente</h2>
+<p>Pour clôturer une vente, il faut cliquer sur la vente à clôturer depuis la salle qui nous intéresse. Appuyer sur le montant total de la vente et appuyer sur <strong>✔️ Règlements</strong>. Il va alors apparaître une fenêtre avec tous les moyens de paiements disponible sur la caisse. On peut aussi faire un paiement en partiel en appuyer sur <strong>paiement partiel</strong> et sélectionnant le montant de ce paiement partiel + le moyen de règlement.</p>
+<h2><a class="anchor" aria-hidden="true" id="34--annulation"></a><a href="#34--annulation" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3.4  Annulation</h2>
+<h3><a class="anchor" aria-hidden="true" id="341--annulation-dune-vente-en-cours"></a><a href="#341--annulation-dune-vente-en-cours" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3.4.1  Annulation d'une vente en cours</h3>
+<p>Pour annuler une vente en cours il faut faire glisser la vente vers la gauche et appuyer sur l'icône de <strong>suppression 🚫</strong>. Il faudra ensuite choisir un motif d'annulation.</p>
+<h3><a class="anchor" aria-hidden="true" id="342---annulation-dune-vente-encaissée"></a><a href="#342---annulation-dune-vente-encaissée" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3.4.2 - Annulation d'une vente encaissée</h3>
+<p>II faudra tout d'abord appuyer sur l'icône de <strong>recherche 🔎</strong>, et retrouver la vente en question. Pour annuler la vente, il faut faire glisser la vente vers la gauche et appuyer sur l'icône de <strong>suppression 🚫</strong>. Il faudra ensuite choisir un motif d'annulation.</p>
+<h3><a class="anchor" aria-hidden="true" id="343---annulation-darticle-sur-commande"></a><a href="#343---annulation-darticle-sur-commande" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3.4.3 - Annulation d'article sur commande</h3>
+<p>Pour annuler un article sur une commande, il faut dans un premier temps ouvrir la commande en question. Appuyer sur le montant de la commande pour que le contenu de la commande s'affiche. Puis faire un glisser vers la gauche de l'article pour l'annuler.</p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/SDJDC/docs/en/man-utilisateur-pop"><span class="arrow-prev">← </span><span>Manuel d&#x27;utilisation client</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#11---connexion-à-la-caisse-centrale">1.1 - Connexion à la caisse centrale</a></li><li><a href="#12---paramétrage-de-la-télécommande">1.2 - Paramétrage de la télécommande</a><ul class="toc-headings"><li><a href="#121---imprimantes">1.2.1 - Imprimantes</a></li><li><a href="#122---blocage-des-tables">1.2.2 - Blocage des tables</a></li></ul></li><li><a href="#21---connexion-vendeur">2.1 - Connexion vendeur</a></li><li><a href="#22---menu">2.2 - Menu</a><ul class="toc-headings"><li><a href="#221---commandes">2.2.1 - Commandes</a></li><li><a href="#222---rapport-caisse">2.2.2 - Rapport caisse</a></li><li><a href="#223---réglages">2.2.3 - Réglages</a></li><li><a href="#224---support">2.2.4 - Support</a></li><li><a href="#225---déconnexion">2.2.5 - Déconnexion</a></li></ul></li><li><a href="#31---prises-de-commandes">3.1 - Prises de commandes</a><ul class="toc-headings"><li><a href="#311---ouverture-dune-commande">3.1.1 - Ouverture d’une commande</a></li><li><a href="#312---saisie-dune-commande">3.1.2 - Saisie d'une commande</a></li><li><a href="#313---envoi-en-commande">3.1.3 - Envoi en commande</a></li></ul></li><li><a href="#32---consultation-de-commande-en-cours">3.2 - Consultation de commande en cours</a><ul class="toc-headings"><li><a href="#321---détail-lors-dune-consultation">3.2.1 - Détail lors d'une consultation</a></li><li><a href="#322---recherche-dune-vente">3.2.2 - Recherche d'une vente</a></li></ul></li><li><a href="#33---encaisser-une-vente">3.3 - Encaisser une vente</a></li><li><a href="#34--annulation">3.4  Annulation</a><ul class="toc-headings"><li><a href="#341--annulation-dune-vente-en-cours">3.4.1  Annulation d'une vente en cours</a></li><li><a href="#342---annulation-dune-vente-encaissée">3.4.2 - Annulation d'une vente encaissée</a></li><li><a href="#343---annulation-darticle-sur-commande">3.4.3 - Annulation d'article sur commande</a></li></ul></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/SDJDC/" class="nav-home"><img src="/SDJDC/img/favicon.ico" alt="SOLUTIONS DIGITALES JDC" width="66" height="58"/></a><div><h5>Docs</h5><a href="/SDJDC/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/SDJDC/docs/en/doc2.html">Guides (or other categories)</a><a href="/SDJDC/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/SDJDC/en/users.html">User Showcase</a><a href="https://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/SDJDC/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://opensource.facebook.com/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/SDJDC/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2020 JDC</section></footer></div></body></html>
