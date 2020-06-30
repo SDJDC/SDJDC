@@ -1,0 +1,32 @@
+{
+  "docs": {
+    "Docusaurus": ["doc1"],
+    "First Category": ["doc2"],
+    "Second Category": ["doc3"]
+  },
+  "docs-other": {
+    "First Category": [
+      "doc4", 
+      "doc5"
+    ]
+  },
+  "Popina": {
+    "Installation": [
+      "man-installation-pop"
+    ],
+    "Manuels d'utilisation": [
+      "man-utilisateur-pop", 
+      "man-utilisateur-pop-ipod"
+    ]
+  },
+  "Qoodos": {
+    "Back Office": [
+      "man-utilisateur-qoodos"
+    ]
+  },
+  "Foxoerders": {
+    "Manuels d'iutilisation": [
+      "man-utilisateur-fox"
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "version-10.4.1-docs": {
+    "Docusaurus": [
+      "version-10.4.1-doc1"
+    ],
+    "First Category": [
+      "version-10.4.1-doc2"
+    ],
+    "Second Category": [
+      "version-10.4.1-doc3"
+    ]
+  },
+  "version-10.4.1-docs-other": {
+    "First Category": [
+      "version-10.4.1-doc4",
+      "version-10.4.1-doc5"
+    ]
+  },
+  "version-10.4.1-Popina": {
+    "Installation": [
+      "version-10.4.1-man-installation-pop"
+    ],
+    "Manuels d'utilisation": [
+      "version-10.4.1-man-utilisateur-pop",
+      "version-10.4.1-man-utilisateur-pop-ipod"
+    ]
+  },
+  "version-10.4.1-Qoodos": {
+    "Back Office": [
+      "version-10.4.1-man-utilisateur-qoodos"
+    ]
+  },
+  "version-10.4.1-Foxoerders": {
+    "Manuels d'iutilisation": [
+      "version-10.4.1-man-utilisateur-fox"
+    ]
+  }
+}
